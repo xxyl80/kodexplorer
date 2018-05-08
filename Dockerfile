@@ -23,7 +23,7 @@ WORKDIR /var/www/html
 
 COPY entrypoint.sh /usr/local/bin/
 
-EXPOSE 8080
+EXPOSE 8100
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD [ "php", "-S", "0000:8080", "-t", "/var/www/html" ]
+CMD [ "php", "-S", "0000:8100", "-t", "/var/www/html" ]
